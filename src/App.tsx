@@ -1,4 +1,3 @@
-import React from 'react';
 import { HomePage } from './pages/HomePage';
 import { MapOverlay } from './components/MapOverlay';
 import { useBusStore } from './store/useBusStore';

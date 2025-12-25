@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
-import { Terminal } from '../types';
+import type { Terminal } from '../types';
 import { useBusStore } from '../store/useBusStore';
-import { X, Navigation } from 'lucide-react';
+import { X } from 'lucide-react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 

@@ -1,4 +1,4 @@
-import { Terminal } from '../types';
+import type { Terminal } from '../types';
 
 export const TERMINALS: Terminal[] = [
     { id: 'amman_terminal', nameAr: 'مجمع عمان', routes: [15, 22, 51, 102], centerLat: 31.927, centerLng: 35.924 },

@@ -1,4 +1,3 @@
-import React from 'react';
 import { TerminalCard } from '../components/TerminalCard';
 import { TERMINALS } from '../constants/Terminals';
 import { useBusStore } from '../store/useBusStore';

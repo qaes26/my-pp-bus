@@ -1,5 +1,4 @@
-import React from 'react';
-import { Terminal } from '../types';
+import type { Terminal } from '../types';
 import { Bus, MapPin } from 'lucide-react';
 
 interface TerminalCardProps {

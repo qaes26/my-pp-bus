@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Bus, Terminal } from '../types';
+import type { Bus, Terminal } from '../types';
 import { busService } from '../services/BusService';
 
 interface BusState {
@@ -11,6 +11,7 @@ interface BusState {
     setSelectedTerminal: (terminal: Terminal | null) => void;
     fetchBuses: (terminalId: string) => Promise<void>;
     updateBuses: (buses: Bus[]) => void;
+    clearSelection: () => void;
 }
 
 export const useBusStore = create<BusState>((set, get) => ({
@@ -24,6 +25,10 @@ export const useBusStore = create<BusState>((set, get) => ({
         if (terminal) {
             get().fetchBuses(terminal.id);
         }
+    },
+
+    clearSelection: () => {
+        set({ selectedTerminal: null, buses: [] });
     },
 
     fetchBuses: async (terminalId) => {
@@ -40,3 +45,4 @@ export const useBusStore = create<BusState>((set, get) => ({
         set({ buses: newBuses });
     }
 }));
+

@@ -1,11 +1,11 @@
-import { Bus } from '../types';
+import type { Bus } from '../types';
 
 const SIMULATION_INTERVAL = 3000;
 
 // Mock Data Configuration & Simulation Logic
 class BusService {
     private subscribers: Record<string, ((buses: Bus[]) => void)[]> = {};
-    private intervals: Record<string, NodeJS.Timeout> = {};
+    private intervals: Record<string, ReturnType<typeof setInterval>> = {};
     private mockBuses: Record<string, Bus[]> = {};
 
     constructor() {
