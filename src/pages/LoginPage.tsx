@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/useAuthStore';
 import logoUrl from '../assets/logo.png';
 import { User, Lock, LogIn } from 'lucide-react';
-import '../index.css'; // Ensure we have access to variables if needed, though mostly using index.css classes
+import '../index.css';
 
 export const LoginPage: React.FC = () => {
     const [studentId, setStudentId] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const login = useAuthStore(state => state.login);
+    const navigate = useNavigate();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         const success = await login(studentId, password);
-        if (!success) {
+        if (success) {
+            navigate('/');
+        } else {
             setError('الرجاء إدخال الرقم الجامعي وكلمة المرور');
         }
     };
