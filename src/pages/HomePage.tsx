@@ -8,8 +8,13 @@ export const HomePage: React.FC = () => {
     return (
         <div className="home-page">
             <header className="app-header">
-                <h1 className="app-title">BUS TRACKER INU</h1>
-                <p className="developer-credit">من تطوير الطالب : قيس طلال الجازي</p>
+                <div className="header-content">
+                    <img src="./assets/logo.png" alt="University Logo" className="app-logo" />
+                    <div className="title-container">
+                        <h1 className="app-title">BUS TRACKER INU</h1>
+                        <p className="developer-credit">من تطوير الطالب : قيس طلال الجازي</p>
+                    </div>
+                </div>
             </header>
 
             <main className="terminal-grid">
