@@ -19,6 +19,13 @@ body {
   /* RTL Support */
   min-width: 320px;
   min-height: 100vh;
+
+  /* Background Image Setup */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 #root {
@@ -28,9 +35,10 @@ body {
 
 /* App Header */
 .app-header {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
   padding: 1rem;
-  border-bottom: 1px solid #E5E7EB;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -61,8 +69,9 @@ body {
 
 /* Terminal Card */
 .terminal-card {
-  background: white;
-  border: 1px solid #F3F4F6;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 16px;
   padding: 1rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
