@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
 
   /* Background Image Setup */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/bg.png');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('./assets/bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
