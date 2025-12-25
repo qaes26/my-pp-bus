@@ -1,6 +1,6 @@
-# BusTracker JO (Web) 🚌
+# BUS TRACKER INU 🚌
 
-A modern React Web Application for tracking buses in Jordan.
+A modern React Web Application for tracking buses, developed by **Qais Talal Al-Jazi**.
 
 ## Features
 - **Real-time Bus Tracking**: Simulate live bus movement on the map.
